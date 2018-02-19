@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_20045fe7ba924e8dbf1d258d98fd1031 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_20045fe7ba924e8dbf1d258d98fd1031" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_20045fe7ba924e8dbf1d258d98fd1031 = L.map(
+                                  'map_20045fe7ba924e8dbf1d258d98fd1031',
+                                  {center: [48,25],
+                                  zoom: [3],
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_506664c5558149c08d15a331ab7cc404 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_20045fe7ba924e8dbf1d258d98fd1031);
+        
+    
+            var feature_group_8c932ac844f146f7a19513fde85bee41 = L.featureGroup(
+                ).addTo(map_20045fe7ba924e8dbf1d258d98fd1031);
+        
+    
+
+            var marker_30ed510c585c47e2813bdfd90bf2ce5d = L.marker(
+                [47.60357000000005,-122.32944999999995],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_8c932ac844f146f7a19513fde85bee41);
+            
+    
+
+                var icon_ca19c5e664f942c5b7ebf07cdc765e33 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'cloud',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_30ed510c585c47e2813bdfd90bf2ce5d.setIcon(icon_ca19c5e664f942c5b7ebf07cdc765e33);
+            
+    
+            var popup_dc5e01b32cab45d7966d961a9fc1d4c6 = L.popup({maxWidth: '300'});
+
+            
+                var html_d314915a8e1a4839b408db3de33bf095 = $('<div id="html_d314915a8e1a4839b408db3de33bf095" style="width: 100.0%; height: 100.0%;">name: IMDb nickname: IMDb location: Seattle prof. description: The folks at IMDb talking about movies, TV and celebrities. url: https://t.co/knY83wIwTD followers: 4270397 friends: 946 created at: Mon Nov 24 22:18:17 +0000 2008 image: http://pbs.twimg.com/profile_images/780796992611942405/qj7ytv9v_normal.jpg </div>')[0];
+                popup_dc5e01b32cab45d7966d961a9fc1d4c6.setContent(html_d314915a8e1a4839b408db3de33bf095);
+            
+
+            marker_30ed510c585c47e2813bdfd90bf2ce5d.bindPopup(popup_dc5e01b32cab45d7966d961a9fc1d4c6);
+
+            
+        
+</script>

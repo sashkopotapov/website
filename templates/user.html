@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_cdee328ccc2a4776b50b375e951a00e7 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_cdee328ccc2a4776b50b375e951a00e7" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_cdee328ccc2a4776b50b375e951a00e7 = L.map(
+                                  'map_cdee328ccc2a4776b50b375e951a00e7',
+                                  {center: [48,25],
+                                  zoom: [3],
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_e096761a474f4262ad1b75343b7c3923 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_cdee328ccc2a4776b50b375e951a00e7);
+        
+    
+            var feature_group_ae1a0d33d67a43d4b128a9c76cec989f = L.featureGroup(
+                ).addTo(map_cdee328ccc2a4776b50b375e951a00e7);
+        
+    
+
+            var marker_f47515b481b94ff2802185dc8a704cf8 = L.marker(
+                [38.890370000000075,-77.03195999999997],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_ae1a0d33d67a43d4b128a9c76cec989f);
+            
+    
+
+                var icon_72d9618ac3dd4459baaa395444a06798 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'cloud',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f47515b481b94ff2802185dc8a704cf8.setIcon(icon_72d9618ac3dd4459baaa395444a06798);
+            
+    
+            var popup_a0e478b2b24949168e1bca01ed359085 = L.popup({maxWidth: '300'});
+
+            
+                var html_36e3f58f551748fca7448bcc59ce4e3d = $('<div id="html_36e3f58f551748fca7448bcc59ce4e3d" style="width: 100.0%; height: 100.0%;">name: Barack Obama nickname: BarackObama location: Washington, DC prof. description: Dad, husband, President, citizen. url: https://t.co/93Y27HEnnX followers: 100077613 friends: 624697 created at: Mon Mar 05 22:08:25 +0000 2007 image: http://pbs.twimg.com/profile_images/822547732376207360/5g0FC8XX_normal.jpg </div>')[0];
+                popup_a0e478b2b24949168e1bca01ed359085.setContent(html_36e3f58f551748fca7448bcc59ce4e3d);
+            
+
+            marker_f47515b481b94ff2802185dc8a704cf8.bindPopup(popup_a0e478b2b24949168e1bca01ed359085);
+
+            
+        
+</script>
